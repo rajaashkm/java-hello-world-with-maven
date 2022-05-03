@@ -1,5 +1,6 @@
 pipeline{
     agent any
+    PATH = "/usr/share/maven:$PATH"
     stages{
         stage("clone code"){
             steps{
